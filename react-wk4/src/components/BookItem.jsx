@@ -2,9 +2,12 @@ import { Link } from "react-router";
 
 function BookItem({ book }) {
   return (
-    <section className="pt-4 px-3 lg:px-4">
-      <div className="bg-white rounded overflow-hidden">
-        <img className="w-full" src={book.cover} alt={book.title} />
+    <section className="pt-4 px-3 h-full lg:px-4">
+      <div className="bg-white rounded overflow-hidden h-full">
+        <Link to={`/books_reviews/ID/${book.ID}`}>
+          <img className="w-full" src={book.cover} alt={book.title} />
+        </Link>
+
         <div className="p-4">
           <h3 className="text-slate-600 text-3xl font-medium mb-1">
             {book.title}
