@@ -7,7 +7,6 @@ import BookDetail from "../components/BookDetail";
 function Book() {
   const { bookId } = useParams();
   const book = books_reviews.find((e) => e.ID === Number(bookId));
-  console.log(book);
 
   return (
     <div className="container mx-auto main-layout ">

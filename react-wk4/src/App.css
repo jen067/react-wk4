@@ -12,6 +12,16 @@ body {
   height: 100%;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
 .main-layout {
   display: grid;
   min-height: 100vh;

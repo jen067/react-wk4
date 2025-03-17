@@ -1,3 +1,5 @@
+import AddToCart from "./AddToCart";
+
 function BookDetail({ book }) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-24 gap-8 justify-center">
@@ -17,12 +19,8 @@ function BookDetail({ book }) {
           {book.author}
         </h2>
         <p className="text-slate-600  text-lg mb-4 leading-8">{book.summary}</p>
-
-        {/* 價格與按鈕 */}
-        {/* <div className="flex flex-col gap-4">
-          <p className="text-2xl font-semibold">US${product.price}.00</p>
-          <AddToCart />
-        </div> */}
+        <hr className="opacity-20" />
+        <AddToCart book={book} />
       </div>
     </div>
   );
