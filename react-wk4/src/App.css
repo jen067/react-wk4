@@ -9,4 +9,28 @@ body {
 
 body {
   background-color: #eeeeee;
+  height: 100%;
+}
+
+.main-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
 }
