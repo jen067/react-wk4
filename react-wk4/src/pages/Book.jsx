@@ -9,7 +9,7 @@ function Book() {
   const book = books_reviews.find((e) => e.ID === Number(bookId));
 
   return (
-    <div className="container mx-auto main-layout ">
+    <div className="container flex flex-col mx-auto main-layout bg-base-300 min-h-screen">
       <Header title="Book Detail" slogan="An example made by Vite." />
       <BookDetail book={book} className="content" />
       <Footer className="footer" />

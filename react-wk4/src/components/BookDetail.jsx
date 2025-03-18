@@ -1,36 +1,9 @@
 import AddToCart from "./AddToCart";
+import BookReviews from "./BookReviews";
 
 function BookDetail({ book }) {
-  const bookReviews = () => {
-    const reviews = book.reviews;
-    const reviewList = reviews.map((review, index) => {
-      return (
-        <li key={index} className="list-row flex items-center">
-          <div>
-            <img
-              className="size-15 object-contain rounded-box"
-              src="/images/user.png"
-            />
-          </div>
-          <div>
-            <div className="text-xl text-slate-600 font-medium ">
-              {review.reviewer}
-            </div>
-            <div className="text-base text-slate-600 font-semibold opacity-60">
-              {review.comment}
-            </div>
-          </div>
-          <div className="rating ml-auto text-xl font-medium text-slate-600">
-            {review.rating}
-          </div>
-        </li>
-      );
-    });
-    console.log(reviewList);
-    return reviewList;
-  };
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-24 grid-rows-2 gap-8 justify-center content-center">
+    <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-24 lg:grid-rows-2 gap-8 justify-center content-center">
       {/* 左側：產品圖片（佔6/24） */}
       <div className="lg:col-span-6 lg:col-start-3">
         <img
@@ -50,12 +23,7 @@ function BookDetail({ book }) {
         <hr className="opacity-20" />
         <AddToCart book={book} />
       </div>
-      <ul className="row-start-2 col-span-20 col-start-3 self-center list bg-base-100 rounded-box shadow-md p-4">
-        <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">
-          Most played songs this week
-        </li>
-        {bookReviews()}
-      </ul>
+      <BookReviews book={book} />
     </div>
   );
 }

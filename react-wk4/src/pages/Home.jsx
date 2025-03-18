@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="container flex flex-col gap-4 mx-auto main-layout bg-base-300 min-h-screen">
       <Header
-        title="Welcome to the Book Shop"
+        title="Welcome to the Bookstore"
         slogan="The best place to buy your favorite books"
       />
       <BookList className="content" />
