@@ -12,7 +12,7 @@ function Book() {
     <div className="container flex flex-col mx-auto main-layout bg-base-300 min-h-screen">
       <Header title="Book Detail" slogan="An example made by Vite." />
       <BookDetail book={book} className="content" />
-      <Footer className="footer" />
+      <Footer />
     </div>
   );
 }

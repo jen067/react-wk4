@@ -12,18 +12,12 @@ function BookReviews({ book }) {
   };
   const reviewList = reviews.map((review, index) => {
     return (
-      <li key={index} className="list-row flex items-center">
-        <div>
-          <img
-            className="size-15 object-contain rounded-box"
-            src="/images/user.png"
-          />
-        </div>
+      <li key={index} className="list-row flex flex-wrap items-center">
         <div>
           <div className="text-xl text-slate-600 font-medium ">
             {review.reviewer}
           </div>
-          <div className="text-base text-slate-600 font-semibold opacity-60">
+          <div className="text-base text-slate-600  opacity-60">
             {review.comment}
           </div>
         </div>
@@ -35,7 +29,7 @@ function BookReviews({ book }) {
   });
 
   return (
-    <ul className="row-start-2 col-span-20 col-start-3 self-center list bg-base-100 rounded-box shadow-md p-4">
+    <ul className="col-span-1 mx-4 md:mx-0 md:col-span-6 md:col-start-2 lg:col-span-20 lg:col-start-3 self-center list bg-base-100 rounded-box shadow-md p-4">
       <li className="p-4 pb-2 text-2xl font-semibold opacity-60 tracking-wide">
         Reviews
       </li>

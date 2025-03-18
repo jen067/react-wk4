@@ -43,4 +43,5 @@ input:focus {
 
 .footer {
   grid-area: footer;
+  row-gap: 1rem;
 }

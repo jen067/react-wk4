@@ -29,7 +29,7 @@ function AddToCart({ book }) {
   return (
     <div>
       <div className="flex items-center number-btns my-8">
-        <span className="mr-8">數量</span>
+        <span className="mr-8">Quantity</span>
         <button
           className="btn decrease text-lg"
           disabled={quantity === 1}
@@ -52,7 +52,7 @@ function AddToCart({ book }) {
         </button>
       </div>
       <div className="add_to_cart flex justify-between items-center">
-        <button className="btn decrease text-lg bg-slate-500 text-white px-10 py-6">
+        <button className="btn decrease text-lg bg-slate-500 text-white md:px-20 lg:px-10 py-6">
           Add to cart
         </button>
         <h2 className="text-slate-600 text-4xl font-bold">${book.price}</h2>
