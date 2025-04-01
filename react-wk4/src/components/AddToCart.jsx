@@ -1,7 +1,24 @@
 import { createElement, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addCartItems } from "../redux/cartSlice";
 
 function AddToCart({ book }) {
   const [quantity, setQuantity] = useState(1);
+
+  const dispatch = useDispatch();
+
+  const addToCart = () => {
+    dispatch(
+      addCartItems({
+        id: book.ID,
+        title: book.title,
+        cover: book.cover,
+        price: book.price,
+        countInStock: book.stock,
+        quantity: quantity,
+      })
+    );
+  };
 
   const increaseQuantity = () => {
     if (quantity < book.stock) {
@@ -66,7 +83,11 @@ function AddToCart({ book }) {
       </div>
 
       <div className="add_to_cart flex  flex-col-reverse gap-4 md:gap-0 md:flex-row md:justify-between md:items-center">
-        <button className="btn decrease text-lg bg-slate-500 text-white md:px-20 lg:px-[5.5rem] py-6">
+        <button
+          type="primary"
+          className="btn decrease text-lg bg-slate-500 text-white md:px-20 lg:px-[5.5rem] py-6"
+          onClick={addToCart}
+        >
           Add to cart
         </button>
         <div className="total text-slate-600 text-3xl font-semibold md:text-4xl md:font-bold">
