@@ -4,10 +4,12 @@ import { addCartItems } from "../redux/cartSlice";
 
 function AddToCart({ book }) {
   const [quantity, setQuantity] = useState(1);
+  const [showToast, setShowToast] = useState(false);
 
   const dispatch = useDispatch();
 
   const addToCart = () => {
+    setShowToast(true);
     dispatch(
       addCartItems({
         id: book.ID,
@@ -18,6 +20,10 @@ function AddToCart({ book }) {
         quantity: quantity,
       })
     );
+
+    setTimeout(() => {
+      setShowToast(false);
+    }, 2000);
   };
 
   const increaseQuantity = () => {
@@ -97,6 +103,17 @@ function AddToCart({ book }) {
           {totalPrice(book.price)}
         </div>
       </div>
+
+      {showToast && (
+        <div className="toast">
+          <div className="alert alert-info w-auto h-auto p-8 bg-[rgba(255,255,255,0.7)] border-none">
+            <span className="text-lg">
+              {quantity} of {book.title} {quantity > 1 ? "have" : "has"} been
+              added to your cart
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

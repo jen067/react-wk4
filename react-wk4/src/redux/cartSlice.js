@@ -8,19 +8,14 @@ const cartSlice = createSlice({
   reducers: {
     addCartItems: (state, action) => {
       const item = action.payload;
-      const book = state.cartItems.find((x) => x.ID === item.ID);
-
-      if (book) {
-        // 如果已經有這本書，則增加數量
-        state.cartItems = state.cartItems.map((x) =>
-          x.ID === book.ID ? { ...x, quantity: x.quantity + item.quantity } : x
+      const product = state.cartItems.find((x) => x.id === item.id);
+      if (!!product) {
+        const cartItems = state.cartItems.map((x) =>
+          x.id === product.id ? item : x
         );
+        state.cartItems = cartItems;
       } else {
-        // 如果沒有這本書，則新增並設定數量
-        state.cartItems = [
-          ...state.cartItems,
-          { ...item, quantity: item.quantity },
-        ];
+        state.cartItems = [...state.cartItems, item];
       }
     },
   },
