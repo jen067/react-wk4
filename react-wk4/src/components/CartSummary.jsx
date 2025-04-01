@@ -44,11 +44,52 @@ function CartSummary() {
           </div>
           <div
             tabIndex={0}
-            className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
+            className="card card-compact dropdown-content bg-base-100 z-100 mt-3 w-[400px] shadow"
           >
             <div className="card-body">
-              <span className="text-lg font-bold">8 Items</span>
-              <span className="text-info">Subtotal: $999</span>
+              <span className="text-lg font-bold">Shopping Basket</span>
+              <div className="items ">
+                {cartItems.length === 0 ? (
+                  <p className="opacity-70">There is no item...</p>
+                ) : (
+                  cartItems.map((item) => (
+                    <div className="mb-4">
+                      <div
+                        key={item.ID}
+                        className="flex justify-between items-center  list-none"
+                      >
+                        <div className="left flex gap-8 items-center">
+                          <img
+                            src={item.cover}
+                            alt={item.title}
+                            className="w-[75px] h-[120px] object-cover object-center"
+                          />
+                          <div className="info flex flex-col  gap-2 text-base">
+                            <li>{item.title}</li>
+                            <li>{item.quantity}</li>
+                          </div>{" "}
+                        </div>
+
+                        <div className="flex flex-col justify-end text-right gap-2 text-base">
+                          <li className="font-semibold">
+                            ${item.quantity * item.price}
+                          </li>
+                          <li>X</li>
+                        </div>
+                      </div>
+                      <div className="w-full h-[0.5px] bg-slate-700 mt-2 opacity-60"></div>
+                    </div>
+                  ))
+                )}
+              </div>
+
+              <span className=" text-slate-700 text-xl font-semibold text-right mb-4">
+                Subtotal: $
+                {cartItems.reduce(
+                  (sum, item) => (sum += item.price * item.quantity),
+                  0
+                )}
+              </span>
               <div className="card-actions">
                 <button className="btn btn-primary btn-block">View cart</button>
               </div>
