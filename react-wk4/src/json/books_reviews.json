@@ -3,10 +3,11 @@
       "ID": 1,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
+      "genre": "Classic",
       "summary": "In 1922, Nick Carraway, a Yale graduate and World War I veteran, moves to Long Island’s North Shore and becomes entangled with the extravagant Jay Gatsby, who is famous for his lavish parties. The story explores themes of wealth, society, and love in the American Dream, highlighting the moral decay hidden behind the glamorous facade of the 1920s.",
       "price": 15,
       "stock": 45,
-      "cover": "/images/book1.png",
+      "cover": "/images/book1.jpg",
       "reviews": [
         {
           "reviewer": "Alice",
@@ -24,10 +25,11 @@
       "ID": 2,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
+      "genre": "Classic",
       "summary": "Set in the Deep South during the 1930s, this novel narrates the experiences of Scout Finch as her father, Atticus Finch, defends a Black man accused of raping a white woman. Through Scout’s eyes, we witness racial injustice and moral growth, as well as the complexities of human behavior in a divided society.",
       "price": 20,
       "stock": 60,
-      "cover": "/images/book2.png",
+      "cover": "/images/book2.jpg",
       "reviews": [
         {
           "reviewer": "Michael",
@@ -50,10 +52,11 @@
       "ID": 3,
       "title": "1984",
       "author": "George Orwell",
+      "genre": "Science-Fiction",
       "summary": "In George Orwell's dystopian novel, society is under constant surveillance by Big Brother. The protagonist, Winston Smith, works at the Ministry of Truth, where he alters historical records to fit government propaganda. As he becomes disillusioned with this oppressive regime, Winston seeks truth and rebellion, leading to a tale of political intrigue and psychological manipulation.",
       "price": 18,
       "stock": 34,
-      "cover": "/images/book3.png",
+      "cover": "/images/book3.jpg",
       "reviews": [
         {
           "reviewer": "David",
@@ -81,10 +84,11 @@
       "ID": 4,
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
+      "genre": "Romance",
       "summary": "This timeless novel centers on Elizabeth Bennet, a young woman navigating issues of class, marriage, and morality in 19th century England. Through her spirited intelligence, Elizabeth confronts her own prejudice against the wealthy Mr. Darcy, revealing deeper themes of love, integrity, and social expectations. Austen's sharp wit and social commentary resonate throughout the story.",
       "price": 25,
       "stock": 50,
-      "cover": "/images/book4.png",
+      "cover": "/images/book4.jpg",
       "reviews": [
         {
           "reviewer": "Emma",
@@ -102,10 +106,11 @@
       "ID": 5,
       "title": "Moby-Dick",
       "author": "Herman Melville",
+      "genre": "Adventure",
       "summary": "This novel follows Ishmael, who joins Captain Ahab on a whaling voyage to catch the elusive Moby Dick, a giant white whale. The narrative delves into themes of obsession, revenge, and the complexities of nature, presenting philosophical reflections on humanity's place in the universe. Melville's rich prose and symbolism make this an enduring classic in American literature.",
       "price": 30,
       "stock": 40,
-      "cover": "/images/book5.png",
+      "cover": "/images/book5.jpg",
       "reviews": [
         {
           "reviewer": "Paul",
@@ -128,10 +133,11 @@
       "ID": 6,
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
+      "genre": "Classic",
       "summary": "The story follows Holden Caulfield, a teenager who has been expelled from his prep school. He wanders New York City, confronting the phoniness of the adult world while grappling with feelings of alienation and loss. Through his cynical perspective and desire to protect the innocence of youth, Salinger's novel has become a poignant exploration of identity and adolescence.",
       "price": 22,
       "stock": 55,
-      "cover": "/images/book6.png",
+      "cover": "/images/book6.jpg",
       "reviews": [
         {
           "reviewer": "Jack",
@@ -157,6 +163,138 @@
           "reviewer": "Lucy",
           "rating": 4,
           "comment": "I really connected with Holden’s struggles."
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "title": "Dune ",
+      "author": "Frank Herbert",
+      "genre": "Science-Fiction",
+      "summary": "In a distant future, Paul Atreides navigates political intrigue, prophecy, and war on the desert planet of Arrakis.",
+      "price": 28,
+      "stock": 38,
+      "cover": "/images/book7.jpg",
+      "reviews": [
+        {
+          "reviewer": "Alex ",
+          "rating": 5,
+          "comment": "A masterpiece of world-building and sci-fi."
+        },
+        {
+          "reviewer": "Sam",
+          "rating": 4,
+          "comment": "Dense but rewarding."
+        }
+      ]
+    },
+    {
+      "ID": 8,
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Science-Fiction",
+      "summary": "A chilling vision of a future society controlled by pleasure, technology, and social conditioning.",
+      "price": 18,
+      "stock": 47,
+      "cover": "/images/book8.jpg",
+      "reviews": [
+        {
+          "reviewer": "Ben ",
+          "rating": 5,
+          "comment": "Profound and unsettling."
+        },
+        {
+          "reviewer": "Sarah",
+          "rating": 4,
+          "comment": "Fascinating but eerie."
+        }
+      ]
+    },
+    {
+      "ID": 9,
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "genre": "Romance",
+      "summary": "The journey of an orphaned girl who seeks love and independence in Victorian England.",
+      "price": 24,
+      "stock": 42,
+      "cover": "/images/book9.jpg",
+      "reviews": [
+        {
+          "reviewer": "Grace",
+          "rating": 5,
+          "comment": "An unforgettable heroine."
+        },
+        {
+          "reviewer": "Laura",
+          "rating": 4,
+          "comment": "Dark, romantic, and empowering."
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "genre": "Horror",
+      "summary": "A scientist's obsession with creating life leads to unintended and tragic consequences.",
+      "price": 19,
+      "stock": 39,
+      "cover": "/images/book10.jpg",
+      "reviews": [
+        {
+          "reviewer": "Henry",
+          "rating": 5,
+          "comment": "A chilling and timeless classic."
+        },
+        {
+          "reviewer": "Emma",
+          "rating": 4,
+          "comment": "Deeply philosophical and haunting."
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Adventure",
+      "summary": "A reluctant hobbit embarks on an epic quest to reclaim a lost dwarf kingdom from a dragon.",
+      "price": 26,
+      "stock": 52,
+      "cover": "/images/book11.jpg",
+      "reviews": [
+        {
+          "reviewer": "Daniel",
+          "rating": 5,
+          "comment": "Magical storytelling at its finest!"
+        },
+        {
+          "reviewer": "Lisa",
+          "rating": 4,
+          "comment": "A great adventure with rich world-building."
+        }
+      ]
+    },
+    {
+      "ID": 12,
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "genre": "Horror",
+      "summary": "The legendary vampire Count Dracula spreads terror across England, leading to a battle between good and evil.",
+      "price": 21,
+      "stock": 44,
+      "cover": "/images/book12.jpg",
+      "reviews": [
+        {
+          "reviewer": "Mark",
+          "rating": 5,
+          "comment": "The original vampire novel—chilling and atmospheric."
+        },
+        {
+          "reviewer": "Anna",
+          "rating": 4,
+          "comment": "A gothic horror masterpiece."
         }
       ]
     }

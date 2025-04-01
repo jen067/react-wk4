@@ -16,6 +16,9 @@ function BookItem({ book }) {
           />
 
           <div className="card-info p-4">
+            <h6 className="text-slate-500 opacity-80 font-semibold mb-1">
+              {book.genre}
+            </h6>
             <h3 className="text-slate-600 text-3xl font-medium mb-1">
               {book.title}
             </h3>
