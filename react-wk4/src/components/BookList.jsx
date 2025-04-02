@@ -1,4 +1,3 @@
-import books_reviews from "../json/books_reviews.json";
 import BookItem from "./BookItem";
 
 function BookList({ book }) {
