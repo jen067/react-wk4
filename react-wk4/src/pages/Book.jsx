@@ -10,8 +10,8 @@ function Book() {
   const book = books_reviews.find((e) => e.ID === Number(bookId));
 
   return (
-    <div>
-      <CartSummary />{" "}
+    <div className="flex flex-col">
+      <CartSummary />
       <div className="container flex flex-col mx-auto main-layout bg-base-300 min-h-screen">
         <Header title="Book Detail" slogan="An example made by Vite." />
         <BookDetail book={book} className="content" />

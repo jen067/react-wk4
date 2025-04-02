@@ -3,11 +3,9 @@ import Navbar from "./Navbar";
 
 function Header({ title, slogan }) {
   return (
-    <header className="text-center flex flex-col items-center header">
+    <header className="text-center flex flex-col items-center header pt-24">
       <Link to="/">
-        <h2 className="text-slate-500 pt-5 pb-2 text-4xl font-black">
-          {title}
-        </h2>
+        <h2 className="text-slate-500 pb-2 text-4xl font-black">{title}</h2>
       </Link>
 
       <p className="text-gray-400 text-opacity-80 text-normal leading-relaxed xl:w-1/2 lg:w-3/4 mx-auto">

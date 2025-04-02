@@ -1,5 +1,4 @@
 import { NavLink } from "react-router";
-import { useState } from "react";
 
 function Navbar() {
   const navBarContent = [
@@ -17,7 +16,7 @@ function Navbar() {
           key={to}
           to={to}
           className={({ isActive }) =>
-            `mx-6 text-slate-400 text-xl font-medium transition-all duration-500 ease-in-out ${
+            `mx-6 text-slate-400 text-xl font-medium transition-all duration-500 ease-in-out relative z-0 ${
               isActive ? "opacity-100 font-normal" : "opacity-60"
             } hover:opacity-100 hover:text-slate-800`
           }
